@@ -1,17 +1,14 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   color-scheme: dark;
   --color-bg: #000000;
   --color-panel: rgba(255, 255, 255, 0.035);
   --color-line: rgba(255, 255, 255, 0.08);
-  --font-body: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Space Grotesk', 'Manrope', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Manrope', sans-serif;
 }
 
 html {
@@ -19,40 +16,20 @@ html {
 }
 
 body {
-  @apply m-0 bg-[var(--color-bg)] font-sans text-white antialiased;
-  background-image:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 24%),
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: auto, 42px 42px, 42px 42px;
-  background-position: center top, center top, center top;
+  margin: 0;
+  background: var(--color-bg);
+  color: white;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
   min-height: 100vh;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
-}
-
-*::-webkit-scrollbar {
-  width: 10px;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.18);
-  border-radius: 999px;
-}
-
-::selection {
-  background: rgba(255, 255, 255, 0.22);
-  color: white;
+.font-display {
+  font-family: var(--font-display);
 }
 
 @layer base {
@@ -60,73 +37,7 @@ body {
     font-family: var(--font-body);
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
+  h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.04em;
-  }
-
-  a {
-    @apply no-underline;
   }
 }
-
-@layer components {
-  .site-shell {
-    background: linear-gradient(180deg, rgba(5, 5, 5, 0.92), rgba(5, 5, 5, 0.6));
-    backdrop-filter: blur(18px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-  }
-
-  .section-frame {
-    position: relative;
-  }
-
-  .section-frame::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-  }
-
-  .section-kicker {
-    @apply text-center text-sm font-bold text-white;
-  }
-
-  .section-title {
-    @apply mx-auto mt-6 max-w-3xl text-center text-3xl font-extrabold leading-tight text-white sm:text-4xl;
-  }
-
-  .panel {
-    @apply rounded-lg border border-white/10 bg-white/[0.035] p-7 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-sm sm:p-8;
-  }
-
-  .tag {
-    @apply rounded-full border border-white/[0.12] px-3 py-1 text-xs font-semibold text-white/[0.68];
-  }
-
-  .social-link {
-    @apply inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] text-white/[0.8] transition hover:border-white/[0.45] hover:text-white;
-  }
-}
-=======
-@import "tailwindcss";
-
-body{
-  overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0%;
-  padding: 0%;
-    /* of the screen   */
-  width: 100%;
-  position: relative;
-  background-color: black;
-  color: white;
-}
-html {
-  scroll-behavior: smooth;
-}
->>>>>>> de3704c5993911f1b4fd43b20e2a5a34b50fda67

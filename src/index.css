@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 @tailwind base;
@@ -111,3 +112,21 @@ body {
     @apply inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] text-white/[0.8] transition hover:border-white/[0.45] hover:text-white;
   }
 }
+=======
+@import "tailwindcss";
+
+body{
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+    /* of the screen   */
+  width: 100%;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+>>>>>>> de3704c5993911f1b4fd43b20e2a5a34b50fda67

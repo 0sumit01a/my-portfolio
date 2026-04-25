@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import HeroSection from './components/hero/HeroSection';
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
@@ -22,3 +23,17 @@ export default function App() {
     </div>
   );
 }
+=======
+import React from 'react'
+import Header from './components/Header'
+
+const App = () => {
+  return (
+    <div>
+      <Header></Header>
+    </div>
+  )
+}
+
+export default App
+>>>>>>> de3704c5993911f1b4fd43b20e2a5a34b50fda67

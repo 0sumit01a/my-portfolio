@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules
 dist
 .env
@@ -6,3 +7,29 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+=======
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+>>>>>>> de3704c5993911f1b4fd43b20e2a5a34b50fda67
